@@ -61,7 +61,8 @@ describe "Working with Regular expressions" do
   end
 
   describe "#valid_phone_number?" do
-    it "returns true for valid phone numbers, regardless of formatting" d"2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
+    it "returns true for valid phone numbers, regardless of formatting" d
+      "2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
       expect(valid_numbers.all? { |number| valid_phone_number?(number) }).to be(true)
     endo
       valid_numbers = [
